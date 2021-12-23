@@ -26,6 +26,18 @@ namespace ChristmasLights
             Assert.Equal(2, numberOfLightsOn);
         }
 
+        [Fact]
+        public void BeOnWhenTurnedOnFor4LightsGrid()
+        {
+            Lights lights = new Lights();
+
+            lights.TurnOn(new Coordinates(0, 0), new Coordinates(1, 1));
+
+            int numberOfLightsOn = lights.LightsOnCounter();
+            
+            Assert.Equal(4, numberOfLightsOn);
+        }
+ 
        
     }
 }
