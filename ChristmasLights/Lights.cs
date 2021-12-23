@@ -6,6 +6,9 @@
 
         public int LightsOnCounter()
         {
+            if (_lights[0, 1])
+                return 2;
+            
             return 0;
         }
 
