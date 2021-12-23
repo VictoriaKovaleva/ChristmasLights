@@ -6,5 +6,10 @@
         {
             return 0;
         }
+
+        public void TurnOn(Coordinates start, Coordinates end)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
