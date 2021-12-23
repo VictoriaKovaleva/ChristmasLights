@@ -4,9 +4,13 @@ namespace ChristmasLights
 {
     public class Coordinates
     {
+        public int _x;
+        public int _y;
+
         public Coordinates(int x, int y)
         {
-            throw new NotImplementedException();
+            _y = y;
+            _x = x;
         }
     }
 }

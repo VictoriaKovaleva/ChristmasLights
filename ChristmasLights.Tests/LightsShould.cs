@@ -15,15 +15,15 @@ namespace ChristmasLights
         }
 
         [Fact]
-        public void BeOnWhenTurnedOn()
+        public void BeOnWhenTurnedOnFor2LightsGrid()
         {
             Lights lights = new Lights();
 
-            lights.TurnOn(new Coordinates(0, 0), new Coordinates(2, 2));
+            lights.TurnOn(new Coordinates(0, 0), new Coordinates(0, 1));
 
             int numberOfLightsOn = lights.LightsOnCounter();
             
-            Assert.Equal(9, numberOfLightsOn);
+            Assert.Equal(2, numberOfLightsOn);
         }
 
        
