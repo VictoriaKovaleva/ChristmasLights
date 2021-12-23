@@ -8,6 +8,9 @@
         {
             if (_lights[0, 1])
                 return 2;
+
+            if (_lights[1, 1])
+                return 4;
             
             return 0;
         }
