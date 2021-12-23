@@ -4,7 +4,7 @@
     {
         public bool TurnOff()
         {
-            throw new System.NotImplementedException();
+            return true;
         }
     }
 }
