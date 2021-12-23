@@ -2,9 +2,9 @@
 {
     public class Lights
     {
-        public bool TurnOff()
+        public int LightsOnCounter()
         {
-            return true;
+            return 0;
         }
     }
 }

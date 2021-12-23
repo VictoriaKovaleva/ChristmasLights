@@ -9,10 +9,12 @@ namespace ChristmasLights
         public void BeOff()
         {
             Lights lights = new Lights();
+
+            int numberOfLightsOn = lights.LightsOnCounter();
             
-            bool actual = lights.TurnOff();
-            
-            Assert.True(actual);
+            Assert.Equal(0, numberOfLightsOn);
         }
+
+       
     }
 }
